@@ -26,7 +26,7 @@ let listOfProductData = [
     {brandName: "Catrice", availableNumbers: 12},
     {brandName: "Garnier", availableNumbers: 20},
     {brandName: "Victoria Secret", availableNumbers: 10},
-    {brandName: "#Extreme", availableNumbers: 30}
+    {brandName: "Extreme", availableNumbers: 30}
 ]
 
 let listofProducts = [];
@@ -47,3 +47,4 @@ listofCustomers.forEach(customer => {
 
 myParlour.showProductsInStore();
 
+myParlour.addProductToStore();

@@ -7,7 +7,11 @@ class Parlour {
     }
 
     addProductToStore(productObj) {
-        this.store.addProduct(productObj);
+        try {
+            this.store.addProduct(productObj);
+        } catch(error) {
+            console.log("Error:" + error.message);
+        }
     }
 
     addCustomer(customerObj) {
