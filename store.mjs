@@ -4,8 +4,10 @@ class Store {
     }
 
     addProduct(productObj) {
-         this.productList.push(productObj);
-        console.log(`The new product ${productObj.brandName} has been added to the store.`)
+        if(productObj === undefined) 
+            throw new Error("Product not provided!");
+        this.productList.push(productObj);
+        console.log(`The new product ${productObj.brandName} has been added to the store.`);
     }
 
     checkProductAvailability(customerBrandPreference) {
